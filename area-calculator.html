@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fiver-tax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class=" container-fluid bg-danger p-3">
+        <div class="offset-2 col-8" >
+            <h1 class=" text-center text-uppercase text-white" > Welcome to three Star Property & buliders <h1>
+        </div>
+     </div> 
+
+<!-- three star property silder -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/img1.jpg" width="100%" height="600px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img3.jpg" width="100%" height="600px class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img2.jpg" width="100%" height="600px class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- end fo silder -->
+<!-- houses section  -->
+  <div class="container  mt-5 ">
+    <div class="d-flex justify-content-between ">
+        
+      <div class="flex-item">
+        <div class="card" style="width: 18rem;">
+           <img src="images/img2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">House for sale</h5>
+                 <p class="card-text">This House is Available for sale in Hayatabad <br><b>Front width :  </b>25 feet<br><b>Length is : </b>50 feet <br> To check the Square Feet click the below button  </p>
+                 <p id="squareFeetOne" class="bg-primary text-white"></p>
+                 <button class="btn btn-outline-primary" onclick="spuareFeetOne()">click to check Square feet</button>
+                </div>
+            </div>
+         </div>
+
+         <div class="flex-item">
+          <div class="card" style="width: 18rem;">
+             <img src="images/img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">House for sale</h5>
+                   <p class="card-text">This House is Available for sale in Hayatabad <br><b>Front width :  </b>50 feet<br><b>Length is : </b>150 feet <br> To check the Square Feet click the below button  </p>
+                   <p id="squareFeetTwo" class="bg-primary text-white" ></p>
+                   <button class="btn btn-outline-primary" onclick="spuareFeetTwo()">click to check Square feet</button>
+                  </div>
+              </div>
+           </div>
+
+        <div class="flex-item">
+          <div class="card" style="width: 18rem;">
+             <img src="images/img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">House for sale</h5>
+                   <p class="card-text">This House is Available for sale in Hayatabad <br><b>Front width :  </b>50 feet<br><b>Length is : </b>200 feet <br> To check the Square Feet click the below button  </p>
+                   <p id="squareFeetThree"class="bg-primary text-white" ></p>
+                   <button class="btn btn-outline-primary" onclick="spuareFeetThree()">click to check Square feet</button>
+                  </div>
+              </div>
+           </div>
+         </div>
+        </div>
+
+
+<!-- houses section end  -->
+
+<!-- javaScript start  -->
+<script>
+   function spuareFeetOne(){
+    let frontWidth= prompt("Enter the Front width of house");
+    let houseLength= prompt("Enter the length house");
+    let squareFeet = frontWidth*houseLength;
+    document.getElementById('squareFeetOne').innerHTML= "This house in square feet = "+squareFeet;
+   
+    }
+  
+    function spuareFeetTwo(){
+    let frontWidth= prompt("Enter the Front width of house");
+    let houseLength= prompt("Enter the length house");
+    let squareFeet = frontWidth*houseLength;
+    document.getElementById('squareFeetTwo').innerHTML= "This house in square feet ="+squareFeet;
+   
+    }
+    function spuareFeetThree(){
+    let frontWidth= prompt("Enter the Front width of house");
+    let houseLength= prompt("Enter the length house");
+    let squareFeet = frontWidth*houseLength;
+    document.getElementById('squareFeetThree').innerHTML= "This house in square feet"+squareFeet;
+   
+    }
+   
+</script>
+
+</body>
+</html>
